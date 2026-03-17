@@ -49,43 +49,22 @@ languages:
                     location: Avignon, France
                     description: |
                         #### Topics
-                        Uncrewed Aerial Vehicles (UAVs) are poised to serve as a cornerstone of next-generation 6G
-                        networks, enabling the realization of 3D Space-Air-Ground Integrated Networks (SAGINs). By
-                        operating synergistically with terrestrial infrastructure, High-Altitude Platforms (HAPs), and
-                        satellites, UAVs will play a pivotal role in achieving seamless 3D wireless connectivity. However,
-                        ensuring the safety, efficiency, and trustworthiness of UAV operations remains a critical
-                        challenge, particularly in dynamic environments characterized by heterogeneous wireless
-                        conditions, signal clutter, coverage variability, and adverse weather.
-
-                        Artificial Intelligence (AI), an inherent component of 6G ecosystems, offers transformative
-                        potential to address these challenges. Yet, the opaque decision-making processes of Machine
-                        Learning (ML) and Deep Learning (DL) models raise concerns about reliability and accountability in
-                        safety-critical UAV applications. Explainable AI (XAI) bridges this gap by fostering transparency, interpretability, and actionable insights for network optimization. Through XAI-driven
-                        frameworks, UAVs can dynamically synthesize high-resolution geospatial data, network coverage
-                        maps, and meteorological forecasts to optimize flight trajectories, enhance situational awareness,
-                        and ensure resilient connectivity via interpretable reasoning understandable by human operators.
-
-                        This workshop seeks to advance research at the intersection of AI-enabled 6G architectures and
-                        SAGINs, with a focus on UAV-enabled applications.
-
-                        **We invite innovative contributions addressing,
-                        but not limited to, the following topics:**
-                        - Reliable UAV navigation in challenging environments;
-                        - XAI-driven frameworks for safety and trust in UAV decision-making;
-                        - Optimization strategies for SAGIN infrastructures;
-                        - Metrics evaluation for trustworthiness and resilience in AI and XAI-empowered SAGIN;
-                        - Energy-efficient AI and XAI-driven SAGINs;
-                        - Secure and resilient UAV communications;
-                        - Interoperability of UAVs in heterogeneous 6G networks and 3D SAGINs;
-                        - Ethical and regulatory implications of AI-driven UAV operations;
-                        - AI-powered SAGIN traffic management;
-                        - Innovative UAV-oriented use cases that demonstrates the effective integration of AI and XAI into 6G networks.
-
-                        By addressing these emerging challenges, the workshop will catalyze discussions on pioneering
-                        methodologies, interdisciplinary research directions, and technological breakthroughs to shape
-                        the future of intelligent, trustworthy 6G SAGIN ecosystems.
+                        Uncrewed Aerial Vehicles (UAVs) are fundamental to next-generation 6G architectures and the deployment of 3D Space-Air-Ground Integrated Networks (SAGINs). UAVs, along with High-Altitude Platforms (HAPs) and satellites, must maintain seamless connectivity in highly dynamic environments subject to signal clutter, adverse meteorology, and adversarial threats. Ensuring the safety, operational efficiency, and trustworthiness of these aerial nodes is a primary bottleneck in SAGIN deployment.
+                        While Artificial Intelligence (AI) provides the necessary optimization capabilities for 6G ecosystems, the inherent opacity of conventional Machine Learning (ML) and Deep Learning (DL) models severely limits their adoption in safety-critical aviation and networking tasks. Explainable AI (XAI) is required to resolve this deficit, as it introduces transparency, interpretability, and verifiable reasoning into network orchestration and UAV control. By leveraging XAI, aerial networks can dynamically process geospatial and meteorological data to optimize trajectories and maintain resilient connectivity, while providing human operators with interpretable/auditable decision-making processes. 
+                        This workshop targets the intersection of XAI, 6G architectures, and SAGINs with special interest in UAV-centric applications. We solicit original research addressing the following domains: 
+                        - XAI architectures for transparent UAV decision-making and navigation. 
+                        - Quantitative metrics for evaluating trustworthiness and interpretability in AI-empowered SAGINs. 
+                        - Explainability-driven semantic compression and semantic communications for efficient UAV-enabled 6G networks. 
+                        - Ethical, legal, and regulatory compliance of AI-driven autonomous aerial operations. 
+                        - Detection, tracking, and neutralization of malicious UAVs via interpretable AI. 
+                        - XAI protocols for secure and trustworthy UAV communications. 
+                        - Maintaining UAV trustworthiness and operational continuity in zero-trust network environments. 
+                        - Interoperability protocols for UAVs within heterogeneous 6G networks. 
+                        - Energy-efficient XAI routing and resource allocation for 3D SAGIN infrastructure. 
+                        - AI-powered traffic management and airspace deconfliction. 
+                        - Real-world implementations demonstrating the integration of XAI into 6G networks. 
                         #### Important Dates
-                        - Paper submission deadline: ~~July 15, 2026~~ July 30, 2026
+                        - Paper submission deadline: **July 15, 2026**
                         - Paper acceptance notification: **August 15, 2026**
                         - Camera ready & author registration: **September 1, 2026**
                         #### Submission process
@@ -109,7 +88,7 @@ params:
             title: IEEE EXTRANET Workshop 2026
             subtitle: in conjunction with
             shortTitle: IEEE EXTRANET Workshop
-            startDate: 2026-10-20
+            startDate: 2026-10-14
             endDate: 2026-10-20
             address:
                 - Avignon Grand Hotel
@@ -129,7 +108,7 @@ params:
                 #linkedinUrl: https://de.linkedin.com/company/medialesson-gmbh
             images:
                 logo:
-                titleBackground: images/paul-macallan-CFKksjYRSQ8-unsplash.webp
+                titleBackground: images/ryan-klaus-a-n6XZllSgc-unsplash.webp
                 location: images/hotel.webp
             sponsors:
                 - logo: logos/ieee-mb-blue.webp
@@ -140,7 +119,7 @@ params:
                   name: 'IEEE Communications Society'
                 - logo: logos/swimob.webp
                   url: http://wimob.org/
-                  name: '21th International Conference on Wireless and Mobile Computing, Networking and Communications'
+                  name: '22nd International Conference on Wireless and Mobile Computing, Networking and Communications'
 
             organizers:
                 - '00000000-0000-0000-0000-000000000000'
