@@ -54,17 +54,37 @@
         {{/* Store profile pictures of speakers. */}}
         {{ $speaker := . }}
         {{ with $url := $speaker.profilePicture }}
-            {{ with resources.GetRemote $url  | images.Filter (images.Process "q90 webp") }}
-                {{ $content := dict "mediaType" .MediaType.Type "value" .Content }}
-                {{ $params := dict "alt" $speaker.fullName }}
-                {{ $resource := dict
-                    "content" $content
-                    "params" $params
-                    "path" (printf "%s/avatar %s.%s" $path $speaker.id .MediaType.SubType)
-                }}
-                {{ $resources = $resources | append $resource }}
+            {{ if or (hasPrefix $url "https://") (hasPrefix $url "http://") }}
+                {{ with resources.GetRemote $url }}
+                    {{ with . | images.Filter (images.Process "q90 webp") }}
+                        {{ $content := dict "mediaType" .MediaType.Type "value" .Content }}
+                        {{ $params := dict "alt" $speaker.fullName }}
+                        {{ $resource := dict
+                            "content" $content
+                            "params" $params
+                            "path" (printf "%s/avatar %s.%s" $path $speaker.id .MediaType.SubType)
+                        }}
+                        {{ $resources = $resources | append $resource }}
+                    {{ end }}
+                {{ else }}
+                    {{ errorf "Unable to get remote resource %s" $url }}
+                {{ end }}
             {{ else }}
-                {{ errorf "Unable to get remote resource %s" $url }}
+                {{ $localPath := strings.TrimPrefix "/" $url }}
+                {{ with resources.Get $localPath }}
+                    {{ with . | images.Filter (images.Process "q90 webp") }}
+                        {{ $content := dict "mediaType" .MediaType.Type "value" .Content }}
+                        {{ $params := dict "alt" $speaker.fullName }}
+                        {{ $resource := dict
+                            "content" $content
+                            "params" $params
+                            "path" (printf "%s/avatar %s.%s" $path $speaker.id .MediaType.SubType)
+                        }}
+                        {{ $resources = $resources | append $resource }}
+                    {{ end }}
+                {{ else }}
+                    {{ errorf "Unable to get local resource %s" $url }}
+                {{ end }}
             {{ end }}
         {{ end }}
     {{ end }}
