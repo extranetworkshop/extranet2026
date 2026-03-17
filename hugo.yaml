@@ -46,7 +46,7 @@ languages:
             themes:
                 event:
                     slogan: The 1st workshop on EXplainable artificial intelligence for Trustworthy and Resilient Aerial NETworks
-                    location: Marrakesh, Morocco
+                    location: Avignon, France
                     description: |
                         #### Topics
                         Uncrewed Aerial Vehicles (UAVs) are poised to serve as a cornerstone of next-generation 6G
@@ -85,9 +85,9 @@ languages:
                         methodologies, interdisciplinary research directions, and technological breakthroughs to shape
                         the future of intelligent, trustworthy 6G SAGIN ecosystems.
                         #### Important Dates
-                        - Paper submission deadline: ~~July 15, 2025~~ July 30, 2025
-                        - Paper acceptance notification: **August 15, 2025**
-                        - Camera ready & author registration: **September 1, 2025**
+                        - Paper submission deadline: ~~July 15, 2026~~ July 30, 2026
+                        - Paper acceptance notification: **August 15, 2026**
+                        - Camera ready & author registration: **September 1, 2026**
                         #### Submission process
                         Paper revision and presentation is managed through the
                         EDAS system.
@@ -98,7 +98,7 @@ languages:
                         #### Contact us
                         For any inquiry, please contact us at **<pre>extranet-workshop</pre>** <pre>@</pre> **<pre>poliba.it</pre>**
                     directions: |
-                       IEEE EXTRANET Workshop takes place in conjunction with IEEE WiMob 2025. For more information on the venue, registration, and how to reach it, please visit the [conference related page](http://www.wimob.org/wimob2025/venue.php).
+                       IEEE EXTRANET Workshop takes place in conjunction with IEEE WiMob 2026. For more information on the venue, registration, and how to reach it, please visit the [conference related page](http://www.wimob.org/wimob2026/venue.php).
                     aboutUs:
                         For any inquiry, please contact us at **<pre>extranet-workshop</pre>** <pre>@</pre> **<pre>poliba.it</pre>**
 
@@ -106,16 +106,16 @@ params:
     themes:
         event:
             sessionizeId: workshop
-            title: IEEE EXTRANET Workshop 2025
+            title: IEEE EXTRANET Workshop 2026
             subtitle: in conjunction with
             shortTitle: IEEE EXTRANET Workshop
-            startDate: 2025-10-20
-            endDate: 2025-10-20
+            startDate: 2026-10-20
+            endDate: 2026-10-20
             address:
-                - Grand Mogador Menara
-                - Boulevard Mohamed VI,
-                - 40000 Marrakesh,
-                - Morocco
+                - Avignon Grand Hotel
+                - 34 Boulevard Saint Roch,
+                - 84000 Avignon,
+                - France
             map:
                 #embeddableMapUrl: //umap.openstreetmap.fr/en/map/medialesson-gmbh_1105977?scrollWheelZoom=false
                 #viewLargerMapUrl: //umap.openstreetmap.fr/en/map/medialesson-gmbh_1105977

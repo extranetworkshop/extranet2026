@@ -5,7 +5,7 @@ test(`Should display all relevant session information`, async ({ page }) => {
 
     const sessionInformation = page.getByRole('region', { name: 'Session information' });
     await expect(sessionInformation.getByRole('heading', { name: 'BUSINESS' })).toBeVisible();
-    await expect(sessionInformation.getByRole('heading', { name: '30.01.2025, 14:00' })).toBeVisible();
+    await expect(sessionInformation.getByRole('heading', { name: '30.01.2026, 14:00' })).toBeVisible();
     await expect(sessionInformation.getByRole('heading', { name: '@Room 2' })).toBeVisible();
     await expect(
         sessionInformation.getByRole('heading', { name: 'Mastering Personal Branding in the Digital Age' }),
@@ -57,5 +57,5 @@ test(`Should display further session from the same track`, async ({ page }) => {
     const sessionLink = furtherSessions.getByRole('link', { name: "Emma's Session" });
     await expect(sessionLink).toBeVisible();
     await expect(sessionLink).toContainText("Emma's Session");
-    await expect(sessionLink).toContainText('30.01.2025, 12:00');
+    await expect(sessionLink).toContainText('30.01.2026, 12:00');
 });
