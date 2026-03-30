@@ -50,7 +50,7 @@
     display: block;
     text-overflow: ellipsis;
     word-wrap: break-word;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .speaker-card__social-links {
