@@ -1,14 +1,7 @@
 {{ $input := . }}
 {{ $data := dict }}
 
-{{ if eq $input.sessionizeId "test" }}
-    {{ $path := "test/sessionize-view-all.json" }}
-    {{ with resources.Get $path }}
-        {{ $data = . | transform.Unmarshal }}
-    {{ else }}
-        {{ errorf "Unable to get test data resource %q." $path }}
-    {{ end }}
-{{ else if eq $input.sessionizeId "workshop" }}
+{{ if eq $input.sessionizeId "workshop" }}
     {{ $path := "workshop/data.json" }}
     {{ with resources.Get $path }}
         {{ $data = . | transform.Unmarshal }}
