@@ -9,9 +9,8 @@
     {{- page.Scratch.Add "cta_eventbrite_instance" 1 }}
 
 
-    <button id="{{ $buttonId }}" type="button" class="button button--outlined {{ .buttonClass }}">
-        <!--{{ T "cta_button.get_ticket" }}-->
-        COMING SOON!
+    <button id="{{ $buttonId }}" type="button" class="button button--outlined {{ .buttonClass }}" onclick="window.open('https://edas.info/newPaper.php?c=35175', '_blank')">
+        {{ T "cta_button.get_ticket" }}
     </button>
 {{- end }}
 
@@ -24,3 +23,15 @@
         </div>
     </a>
 {{ end }}
+
+{{- if $input.eventbriteId }}
+    <noscript>
+        {{- partial "inline/cta/link.html" (
+            dict
+            "url" (printf "https://edas.info/index.php?c=%d" $input.eventbriteId)
+            )
+        }}
+    </noscript>
+{{- else if $input.ctaUrl }}
+    {{ partial "inline/cta/link.html" (dict "url" $input.ctaUrl) }}
+{{- end }}
